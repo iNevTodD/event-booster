@@ -7,9 +7,28 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: rgba(11, 11, 11);
 }
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    min-width: 1440px;
+  }
 }
