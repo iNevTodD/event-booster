@@ -1,5 +1,6 @@
-*::after,
-*::before {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,6 +9,7 @@ body {
   padding: 0;
   width: 100%;
   background-color: rgba(11, 11, 11);
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -16,9 +18,26 @@ ul {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
+  padding: 0 20px;
 }
 
 @media (min-width: 768px) {
