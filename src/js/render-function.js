@@ -1,4 +1,4 @@
-export default function displayEvents(events) {
+export function displayEvents(events) {
     const eventsList = document.querySelector('.events-list');
 
     const markup = events.map(({ name, dates, _embedded, images }) => {
@@ -23,4 +23,9 @@ export default function displayEvents(events) {
     }).join("");
 
     eventsList.innerHTML = markup;
+}
+
+export function clearGallery() {
+    const gallery = document.querySelector('.events-list');
+    gallery.innerHTML = '';
 }

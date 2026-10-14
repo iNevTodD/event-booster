@@ -310,14 +310,14 @@
     }
 }
 
-.search-wrapper {
+.search-form {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 @media (min-width: 768px) {
-    .search-wrapper {
+    .search-form {
         flex-direction: row;
         gap: 32px;
     }
@@ -364,6 +364,15 @@
         max-width: 288px;
         width: 288px;
     }
+}
+
+.search-btn {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search__icon {

@@ -4,13 +4,14 @@
     z-index: 2;
 }
 
-@media(min-width: 768px){
-    .events{
+@media(min-width: 768px) {
+    .events {
         margin-top: -90px;
     }
 }
-@media(min-width: 1440px){
-    .events{
+
+@media(min-width: 1440px) {
+    .events {
         margin-top: -76px;
     }
 }
@@ -125,6 +126,7 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
+    width: 100%;
 }
 
 @media(min-width: 1440px) {
@@ -134,10 +136,14 @@
 }
 
 .event-name {
+    max-width: 100%;
     font-weight: 700;
     font-size: 14px;
     text-align: center;
     color: #dc56c5;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media(min-width: 768px) {
@@ -165,16 +171,22 @@
     gap: 3px;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 .icon-geo {
     fill: #fff;
+    flex-shrink: 0;
 }
 
 .timezone {
     font-weight: 600;
     font-size: 12px;
     color: #fff;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media(min-width:768px) {
