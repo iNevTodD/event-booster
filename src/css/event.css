@@ -18,6 +18,9 @@
 
 .events .container {
     max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 @media(min-width: 768px) {
@@ -126,7 +129,7 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
-    width: 100%;
+    max-width: 100%;
 }
 
 @media(min-width: 1440px) {
@@ -193,4 +196,36 @@
     .timezone {
         font-size: 14px;
     }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.page-btn {
+    background-color: inherit;
+    border: 1px solid transparent;
+    border-radius: 10px 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.page-btn.active {
+    border-color: #dc56c5;
+    color: #dc56c5;
+}
+
+.page-dots {
+    color: #fff;
 }
