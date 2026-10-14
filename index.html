@@ -11,7 +11,7 @@
     <script type="module" crossorigin src="/event-booster/index.js"></script>
     <link rel="modulepreload" crossorigin href="/event-booster/assets/vendor-C4mnirqh.js">
     <link rel="stylesheet" crossorigin href="/event-booster/assets/vendor-DnveWo0P.css">
-    <link rel="stylesheet" crossorigin href="/event-booster/assets/index-BeY2BSPQ.css">
+    <link rel="stylesheet" crossorigin href="/event-booster/assets/index-MXV6T7WT.css">
   </head>
   <body>
     <main>
@@ -64,14 +64,14 @@
         </div>
       </div>
     </header>
-    
+
     <div class="hero-content">
       <h1 class="title">
         FIND BEST EVENTS<br />
         AROUND THE WORLD
       </h1>
 
-      <div class="search-wrapper">
+      <form class="search-form">
         <div class="input-wrapper">
           <input
             type="text"
@@ -79,25 +79,26 @@
             name="search"
             placeholder="Start searching"
           />
-          <svg class="search__icon" width="12" height="12">
-            <use href="/event-booster/assets/sprite-b7lbO1oy.svg#icon-search"></use>
-          </svg>
+          <button class="search-btn" type="submit">
+            <svg class="search__icon" width="12" height="12">
+              <use href="/event-booster/assets/sprite-b7lbO1oy.svg#icon-search"></use>
+            </svg>
+          </button>
         </div>
 
         <div class="input-wrapper">
           <input
-            type=""
+            type="text"
             class="search__input"
             name="country"
             placeholder="Choose country"
-            readonly
           />
 
           <svg class="search__icon" width="13" height="8">
             <use href="/event-booster/assets/sprite-b7lbO1oy.svg#icon-dropdown"></use>
           </svg>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </section>
