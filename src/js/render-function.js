@@ -29,7 +29,9 @@ export function clearEvents() {
     document.querySelector('.events-list').innerHTML = '';
     document.querySelector('.pagination').innerHTML = '';
 }
-
+export function clearCountriesList() {
+    document.querySelector('.country-list').innerHTML = '';
+}
 
 function getPaginationPages(currentPage, totalPages) {
     if (totalPages <= 7) {
@@ -40,7 +42,7 @@ function getPaginationPages(currentPage, totalPages) {
     pages[6] = totalPages;
 
 
-    if (totalPages - currentPage <= 4) {
+    if (totalPages - currentPage <= 3) {
         pages[1] = "...";
         let page = totalPages - 4;
 
@@ -80,4 +82,18 @@ function renderPagination(currentPage, totalPages) {
 export function renderEventsPage(events, currentPage, totalPages) {
     renderEvents(events);
     renderPagination(currentPage, totalPages);
+}
+
+export function renderCountries(countries) {
+    const countriesList = document.querySelector('.country-list');
+
+    const markup = countries.map(country => {
+        return `
+      <li class="country" data-code="${country.code}">
+        ${country.name}
+      </li>
+    `;
+    }).join('');
+
+    countriesList.innerHTML = markup;
 }
