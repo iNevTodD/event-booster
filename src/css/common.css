@@ -40,7 +40,7 @@ img {
 
 .container {
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1248px;
   padding: 0 20px;
 }
 
@@ -52,6 +52,6 @@ img {
 
 @media (min-width: 1440px) {
   .container {
-    min-width: 1440px;
+    min-width: 1248px;
   }
 }

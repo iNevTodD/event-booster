@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     min-height: 364px;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     position: relative;
 }
@@ -30,6 +30,7 @@
     padding: 20px 20px 56px 20px;
     margin: 0 auto;
     gap: 40px;
+    position: relative;
 }
 
 @media (min-width: 768px) {
@@ -52,6 +53,14 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
+}
+
+.hero-decoration {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
 }
 
 .logo-wrapper {
