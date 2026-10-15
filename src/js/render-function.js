@@ -87,6 +87,12 @@ export function renderEventsPage(events, currentPage, totalPages) {
 export function renderCountries(countries) {
     const countriesList = document.querySelector('.country-list');
 
+    const allCountries = `
+        <li class="country" data-code="">
+            All countries
+        </li>
+    `;
+
     const markup = countries.map(country => {
         return `
       <li class="country" data-code="${country.code}">
@@ -95,5 +101,5 @@ export function renderCountries(countries) {
     `;
     }).join('');
 
-    countriesList.innerHTML = markup;
+    countriesList.innerHTML = allCountries + markup;
 }

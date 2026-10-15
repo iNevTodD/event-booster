@@ -219,6 +219,8 @@
     font-size: 16px;
     text-align: center;
     color: #fff;
+
+    transition: border-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .page-btn.active {
